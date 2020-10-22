@@ -7,7 +7,7 @@ public class SmartHomeProjectMain {
 	
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
-		LampOnOff panel = new LampOnOff();
+		JPanel panel = new Lamp();
 		
 		frame.add(panel);
 		frame.setSize(250, 350);
