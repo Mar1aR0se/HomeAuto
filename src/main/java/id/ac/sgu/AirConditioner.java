@@ -2,20 +2,14 @@ package id.ac.sgu;
 
 public class AirConditioner {
     
-    private boolean isOn;
-    private int temp;
+    private double airConditioner;
 
-    public AirConditioner(){
-        this.isOn = false;
-        temp = 0;
+    public double getAirConditioner() {
+        return airConditioner;
     }
-
-    public void turnOn(){
-        this.isOn = true;
-    }
-
-    public void turnOff(){
-        this.isOn = false;
+    
+    public void setAirConditioner(double airConditioner) {
+        this.airConditioner = airConditioner;
     }
 
 }

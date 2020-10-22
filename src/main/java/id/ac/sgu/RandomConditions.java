@@ -8,6 +8,7 @@ public class RandomConditions {
 		shc.brightCtrl(false);
 		shc.cameraCtrl(false);
 		shc.tempCtrl(23);
+		shc.AirConditioner(23);
 		shc.voiceCtrl(false, false);
 		shc.weightCtrl(0);
 		shc.lampCtrl(true);
@@ -17,7 +18,8 @@ public class RandomConditions {
 		shc.AnemometerCtrl(true);
 		shc.brightCtrl(true);
 		shc.cameraCtrl(false);
-		shc.tempCtrl(23);
+		shc.tempCtrl(20);
+		shc.AirConditioner(20);
 		shc.voiceCtrl(false, false);
 		shc.weightCtrl(0);
 		shc.lampCtrl(false);//
@@ -27,7 +29,8 @@ public class RandomConditions {
 		shc.AnemometerCtrl(true);
 		shc.brightCtrl(true);
 		shc.cameraCtrl(true);
-		shc.tempCtrl(23);
+		shc.tempCtrl(25);
+		shc.AirConditioner(25);
 		shc.voiceCtrl(false, false);
 		shc.weightCtrl(0);
 		shc.lampCtrl(false);
@@ -38,6 +41,7 @@ public class RandomConditions {
 		shc.brightCtrl(true);
 		shc.cameraCtrl(true);
 		shc.tempCtrl(31);
+		shc.AirConditioner(31);
 		shc.voiceCtrl(false, false);
 		shc.weightCtrl(0);
 		shc.lampCtrl(false);
@@ -47,7 +51,8 @@ public class RandomConditions {
 		shc.AnemometerCtrl(true);
 		shc.brightCtrl(true);
 		shc.cameraCtrl(true);
-		shc.tempCtrl(31);
+		shc.tempCtrl(32);
+		shc.AirConditioner(32);
 		shc.voiceCtrl(true, false);
 		shc.weightCtrl(0);
 		shc.lampCtrl(true);
@@ -57,7 +62,8 @@ public class RandomConditions {
 		shc.AnemometerCtrl(true);
 		shc.brightCtrl(true);
 		shc.cameraCtrl(true);
-		shc.tempCtrl(31);
+		shc.tempCtrl(33);
+		shc.AirConditioner(33);
 		shc.voiceCtrl(true, true);
 		shc.weightCtrl(0);
 		shc.lampCtrl(false);
@@ -68,6 +74,7 @@ public class RandomConditions {
 		shc.brightCtrl(true);
 		shc.cameraCtrl(true);
 		shc.tempCtrl(22);
+		shc.AirConditioner(22);
 		shc.voiceCtrl(true, true);
 		shc.weightCtrl(4);
 		shc.lampCtrl(true);
@@ -78,6 +85,7 @@ public class RandomConditions {
 		shc.brightCtrl(false);
 		shc.cameraCtrl(true);
 		shc.tempCtrl(31);
+		shc.AirConditioner(31);
 		shc.voiceCtrl(true, true);
 		shc.weightCtrl(4);
 		shc.lampCtrl(true);
@@ -87,7 +95,8 @@ public class RandomConditions {
 		shc.AnemometerCtrl(true);
 		shc.brightCtrl(false);
 		shc.cameraCtrl(false);
-		shc.tempCtrl(31);
+		shc.tempCtrl(30);
+		shc.AirConditioner(30);
 		shc.voiceCtrl(true, true);
 		shc.weightCtrl(4);
 		shc.lampCtrl(true);
@@ -98,6 +107,7 @@ public class RandomConditions {
 		shc.brightCtrl(false);
 		shc.cameraCtrl(false);
 		shc.tempCtrl(23);
+		shc.AirConditioner(23);
 		shc.voiceCtrl(true, true);
 		shc.weightCtrl(4);
 		shc.lampCtrl(true);
@@ -107,7 +117,8 @@ public class RandomConditions {
 		shc.AnemometerCtrl(true);
 		shc.brightCtrl(false);
 		shc.cameraCtrl(false);
-		shc.tempCtrl(23);
+		shc.tempCtrl(27);
+		shc.AirConditioner(27);
 		shc.voiceCtrl(false, true);
 		shc.weightCtrl(4);
 		shc.lampCtrl(true);
@@ -118,6 +129,7 @@ public class RandomConditions {
 		shc.brightCtrl(false);
 		shc.cameraCtrl(false);
 		shc.tempCtrl(23);
+		shc.AirConditioner(23);
 		shc.voiceCtrl(false, true);
 		shc.weightCtrl(0);
 		shc.lampCtrl(true);
