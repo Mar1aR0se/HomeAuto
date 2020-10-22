@@ -61,7 +61,7 @@ public class RandomConditions {
 		shc.AnemometerCtrl(true);
 		shc.brightCtrl(true);
 		shc.cameraCtrl(true);
-		shc.tempCtrl(31);
+		shc.tempCtrl(22);
 		shc.voiceCtrl(true, true);
 		shc.weightCtrl(4);
 	}
@@ -73,5 +73,41 @@ public class RandomConditions {
 		shc.tempCtrl(31);
 		shc.voiceCtrl(true, true);
 		shc.weightCtrl(4);
+	}
+	
+	public void ninthCondition() {
+		shc.AnemometerCtrl(true);
+		shc.brightCtrl(false);
+		shc.cameraCtrl(false);
+		shc.tempCtrl(31);
+		shc.voiceCtrl(true, true);
+		shc.weightCtrl(4);
+	}
+	
+	public void tenthCondition() {
+		shc.AnemometerCtrl(true);
+		shc.brightCtrl(false);
+		shc.cameraCtrl(false);
+		shc.tempCtrl(23);
+		shc.voiceCtrl(true, true);
+		shc.weightCtrl(4);
+	}
+	
+	public void eleventhCondition() {
+		shc.AnemometerCtrl(true);
+		shc.brightCtrl(false);
+		shc.cameraCtrl(false);
+		shc.tempCtrl(23);
+		shc.voiceCtrl(false, true);
+		shc.weightCtrl(4);
+	}
+	
+	public void twelfthCondition() {
+		shc.AnemometerCtrl(true);
+		shc.brightCtrl(false);
+		shc.cameraCtrl(false);
+		shc.tempCtrl(23);
+		shc.voiceCtrl(false, true);
+		shc.weightCtrl(0);
 	}
 }
