@@ -27,19 +27,36 @@ class SmartHomeController {
 	public void weightCtrl(double weight) {
 		for(double y = 0; y <= weight; y++) { //do
 			weight += 0.01;
-			System.out.println("Weight detected");
+			System.out.println("Phone notif: Weight detected in package receiver box. Incoming package..");
 		}
 		
 //		System.out.println("Nothing in the Package received box");
 	}
 	
 	public void tempCtrl(double temperature) {
-		if(temperature >= 23) {
+		if(temperature > 27) {
 			System.out.println("Phone notif: The temperature is hot, activating AC..");
 			//ac.setOn
 		} else if(temperature < 23 ) {
 			System.out.println("Phone notif: The temperature is cold, turning off the AC to save energy..");
 			//ac.setOff
+		} else if(temperature == 23 ) {
+			System.out.println("Phone notif: The temperature is normal, no need to turn on the AC to save energy..");
+			//ac.setOff
+		} else if(temperature == 24 ) {
+			System.out.println("Phone notif: The temperature is normal, no need to turn on the AC to save energy..");
+			//ac.setOff
+		} else if(temperature == 25 ) {
+			System.out.println("Phone notif: The temperature is normal, no need to turn on the AC to save energy..");
+			//ac.setOff
+		} else if(temperature == 26 ) {
+			System.out.println("Phone notif: The temperature is normal, no need to turn on the AC to save energy..");
+			//ac.setOff
+		} else if(temperature == 27 ) {
+			System.out.println("Phone notif: The temperature is normal, no need to turn on the AC to save energy..");
+			//ac.setOff
+		} else {
+			
 		}
 	}
 	
@@ -49,19 +66,29 @@ class SmartHomeController {
 		if(vcTv == true && vcRad == false) {
 			tvCtrl.setTvPower(true);
 			radCtrl.setRadPower(false);
-			System.out.println("TV switched on.");
+			System.out.println("Phone notif: TV switched on.");
 		} else if(vcTv == false && vcRad == true) {
 			tvCtrl.setTvPower(false);
 			radCtrl.setRadPower(true);
-			System.out.println("Radio switched on.");
+			System.out.println("Phone notif: Radio switched on.");
+		} else if(vcTv == false && vcRad == false) {
+			tvCtrl.setTvPower(false);
+			radCtrl.setRadPower(false);
+			System.out.println("Phone notif: TV and Radio switched off.");
+		} else if(vcTv == true && vcRad == true) {
+			tvCtrl.setTvPower(true);
+			radCtrl.setRadPower(true);
+			System.out.println("Phone notif: TV and Radio switched on.");
+		} else {
+			System.out.println("Phone notif: TV and Radio didn't change state.");
 		}
 	}
 	
 	public void cameraCtrl(boolean movement) {
 		if(movement == true) {
-			System.out.println("Phone notif: There is intruders outside detected. Calling the police..");
+			System.out.println("Phone notif: There is/are intruder(s) outside detected. Calling the police..");
 		} else {
-			System.out.println("Phone notif: everything safe");
+			System.out.println("Phone notif: Everything safe. No intruder(s) detected outside..");
 		}
 	}
 	
