@@ -1,22 +1,20 @@
 package id.ac.sgu;
 
-import javax.swing.*;
+
 import java.util.*;
 
 public class SmartHomeProjectMain {
-	
-	public static void main(String[] args) {
-		JFrame frame = new JFrame();
-		LampOnOff panel = new LampOnOff();
+	private int input;
+
+	public SmartHomeProjectMain(){
+		displayMenu();
+	}
+
+	public void displayMenu() {
 		
-		frame.add(panel);
-		frame.setSize(250, 350);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setVisible(true);
-		
+		Scanner button = new Scanner(System.in);
 		RandomConditions rc = new RandomConditions();
-		int input;
-		
+	do {
 		System.out.println("==================================================\n");
 		System.out.println("=============== Smart Home Project ===============\n");
 		System.out.println("==================================================\n");
@@ -35,8 +33,7 @@ public class SmartHomeProjectMain {
 		System.out.println("12. 12th Condition.\n");
 		System.out.println("==================================================\n");
 		System.out.println("Your choice (1-12): ");
-		Scanner choice = new Scanner(System.in);
-		input = choice.nextInt();
+		input = button.nextInt();
 		
 		switch(input) {
 			case 1:
@@ -77,7 +74,9 @@ public class SmartHomeProjectMain {
 				break;
 			default:
 				System.out.println("Choose from 1 to 12 ONLY!!!\n");
-		}
+			}
+		}	
+		while (input !=0);
 		
 	}
 	

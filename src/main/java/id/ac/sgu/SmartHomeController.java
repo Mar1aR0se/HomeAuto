@@ -1,5 +1,11 @@
 package id.ac.sgu;
 
+<<<<<<< HEAD
+=======
+import javax.swing.*;
+//import java.util.*;
+
+>>>>>>> a2e87b150cb954b8fde575d8c26085e449d18afe
 class SmartHomeController {
 	//buat nanti baca sensors and what action should each things would do
 	TvControl tvCtrl = new TvControl();
@@ -7,11 +13,42 @@ class SmartHomeController {
 	CurtainControl cCtrl = new CurtainControl();
 	CameraControl camCtrl = new CameraControl();
 	Sensors sensors = new Sensors();
-	
+	JFrame frame = new JFrame();
+	Lamp panel = new Lamp();
+		
 	boolean bright = true;
 	boolean voiceCommandTv = true;
 	boolean voiceCommandRad = true;
+	boolean AirConditioner = true;
 	
+	public SmartHomeController(){
+		frame.add(panel);
+		frame.setSize(250, 350);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+	}
+	public void lampCtrl(boolean b) {
+		if(bright == b) {
+			sensors.setBrightCtrl(true);
+			panel.changeColor(true);
+			System.out.println("Lamp Brightness = " + sensors.getBrightCtrl());
+		} else {
+			sensors.setBrightCtrl(false);
+			panel.changeColor(false);
+			System.out.println("Lamp Brightness = " + sensors.getBrightCtrl());
+		}
+	}
+	public void AirConditioner (double temperature){
+		//System.out.println("Test");
+		if (temperature > 27){
+			System.out.println("Air Conditioner is Active");
+		} else if (temperature < 23 ){
+			System.out.println("Air Conditioner is not Active, Temperature Cold");
+		}else if (temperature >= 23 && temperature <= 27){
+			System.out.println("Air Conditioner is not Active, Temperature Normal/Cold");
+		}
+	}
+
 	public void brightCtrl(boolean b) {
 		if(bright == b) {
 			sensors.setLightSensor(true);
@@ -33,25 +70,25 @@ class SmartHomeController {
 	
 	public void tempCtrl(double temperature) {
 		if(temperature > 27) {
-			System.out.println("Phone notif: The temperature is hot, activating AC..");
+			System.out.println("Phone notif: The temperature is" + temperature);
 			//ac.setOn
 		} else if(temperature < 23 ) {
-			System.out.println("Phone notif: The temperature is cold, turning off the AC to save energy..");
+			System.out.println("Phone notif: The temperature is" + temperature);
 			//ac.setOff
 		} else if(temperature == 23 ) {
-			System.out.println("Phone notif: The temperature is normal, no need to turn on the AC to save energy..");
+			System.out.println("Phone notif: The temperature is" + temperature);
 			//ac.setOff
 		} else if(temperature == 24 ) {
-			System.out.println("Phone notif: The temperature is normal, no need to turn on the AC to save energy..");
+			System.out.println("Phone notif: The temperature is" + temperature);
 			//ac.setOff
 		} else if(temperature == 25 ) {
-			System.out.println("Phone notif: The temperature is normal, no need to turn on the AC to save energy..");
+			System.out.println("Phone notif: The temperature is" + temperature);
 			//ac.setOff
 		} else if(temperature == 26 ) {
-			System.out.println("Phone notif: The temperature is normal, no need to turn on the AC to save energy..");
+			System.out.println("Phone notif: The temperature is" + temperature);
 			//ac.setOff
 		} else if(temperature == 27 ) {
-			System.out.println("Phone notif: The temperature is normal, no need to turn on the AC to save energy..");
+			System.out.println("Phone notif: The temperature is" + temperature);
 			//ac.setOff
 		} else {
 			

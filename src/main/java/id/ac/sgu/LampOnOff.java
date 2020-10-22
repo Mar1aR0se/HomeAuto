@@ -24,8 +24,8 @@ public class LampOnOff extends JComponent{
 		//g.fillOval(50, 30, 50, 50);
 	}
 	
-	public void changeColor() {
-		if(defaultColor.equals(Color.black)) {
+	public void changeColor(boolean switchOn) {
+		if(switchOn) {
 			defaultColor = Color.yellow ;
 		}
 		else {
