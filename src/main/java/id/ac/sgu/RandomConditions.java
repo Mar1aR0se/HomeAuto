@@ -10,6 +10,7 @@ public class RandomConditions {
 		shc.tempCtrl(23);
 		shc.voiceCtrl(false, false);
 		shc.weightCtrl(0);
+		shc.lampCtrl(true);
 	}
 	
 	public void secondCondition() {
@@ -19,6 +20,7 @@ public class RandomConditions {
 		shc.tempCtrl(23);
 		shc.voiceCtrl(false, false);
 		shc.weightCtrl(0);
+		shc.lampCtrl(false);//
 	}
 	
 	public void thirdCondition() {
@@ -28,6 +30,7 @@ public class RandomConditions {
 		shc.tempCtrl(23);
 		shc.voiceCtrl(false, false);
 		shc.weightCtrl(0);
+		shc.lampCtrl(false);
 	}
 	
 	public void fourthCondition() {
@@ -37,6 +40,7 @@ public class RandomConditions {
 		shc.tempCtrl(31);
 		shc.voiceCtrl(false, false);
 		shc.weightCtrl(0);
+		shc.lampCtrl(false);
 	}
 	
 	public void fifthCondition() {
@@ -46,6 +50,7 @@ public class RandomConditions {
 		shc.tempCtrl(31);
 		shc.voiceCtrl(true, false);
 		shc.weightCtrl(0);
+		shc.lampCtrl(true);
 	}
 	
 	public void sixthCondition() {
@@ -55,6 +60,7 @@ public class RandomConditions {
 		shc.tempCtrl(31);
 		shc.voiceCtrl(true, true);
 		shc.weightCtrl(0);
+		shc.lampCtrl(false);
 	}
 	
 	public void seventhCondition() {
@@ -64,6 +70,7 @@ public class RandomConditions {
 		shc.tempCtrl(22);
 		shc.voiceCtrl(true, true);
 		shc.weightCtrl(4);
+		shc.lampCtrl(true);
 	}
 	
 	public void eigthCondition() {
@@ -73,6 +80,7 @@ public class RandomConditions {
 		shc.tempCtrl(31);
 		shc.voiceCtrl(true, true);
 		shc.weightCtrl(4);
+		shc.lampCtrl(true);
 	}
 	
 	public void ninthCondition() {
@@ -82,6 +90,7 @@ public class RandomConditions {
 		shc.tempCtrl(31);
 		shc.voiceCtrl(true, true);
 		shc.weightCtrl(4);
+		shc.lampCtrl(true);
 	}
 	
 	public void tenthCondition() {
@@ -91,6 +100,7 @@ public class RandomConditions {
 		shc.tempCtrl(23);
 		shc.voiceCtrl(true, true);
 		shc.weightCtrl(4);
+		shc.lampCtrl(true);
 	}
 	
 	public void eleventhCondition() {
@@ -100,6 +110,7 @@ public class RandomConditions {
 		shc.tempCtrl(23);
 		shc.voiceCtrl(false, true);
 		shc.weightCtrl(4);
+		shc.lampCtrl(true);
 	}
 	
 	public void twelfthCondition() {
@@ -109,5 +120,6 @@ public class RandomConditions {
 		shc.tempCtrl(23);
 		shc.voiceCtrl(false, true);
 		shc.weightCtrl(0);
+		shc.lampCtrl(true);
 	}
 }

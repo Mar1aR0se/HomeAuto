@@ -1,18 +1,12 @@
 package id.ac.sgu;
 
-import javax.swing.*;
+
 import java.util.*;
 
 public class SmartHomeProjectMain {
 	
 	public static void main(String[] args) {
-		JFrame frame = new JFrame();
-		JPanel panel = new Lamp();
 		
-		frame.add(panel);
-		frame.setSize(250, 350);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setVisible(true);
 		
 		RandomConditions rc = new RandomConditions();
 		int input;

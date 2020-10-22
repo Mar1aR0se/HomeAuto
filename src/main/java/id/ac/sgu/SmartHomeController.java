@@ -1,5 +1,6 @@
 package id.ac.sgu;
 
+import javax.swing.*;
 //import java.util.*;
 
 class SmartHomeController {
@@ -9,11 +10,31 @@ class SmartHomeController {
 	CurtainControl cCtrl = new CurtainControl();
 	CameraControl camCtrl = new CameraControl();
 	Sensors sensors = new Sensors();
-	
+	JFrame frame = new JFrame();
+	Lamp panel = new Lamp();
+		
 	boolean bright = true;
 	boolean voiceCommandTv = true;
 	boolean voiceCommandRad = true;
 	
+	public SmartHomeController(){
+		frame.add(panel);
+		frame.setSize(250, 350);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+	}
+	public void lampCtrl(boolean b) {
+		if(bright == b) {
+			sensors.setBrightCtrl(true);
+			panel.changeColor(true);
+			System.out.println("Lamp Brightness = " + sensors.getBrightCtrl());
+		} else {
+			sensors.setBrightCtrl(false);
+			panel.changeColor(false);
+			System.out.println("Lamp Brightness = " + sensors.getBrightCtrl());
+		}
+	}
+
 	public void brightCtrl(boolean b) {
 		if(bright == b) {
 			sensors.setLightSensor(true);

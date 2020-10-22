@@ -5,6 +5,7 @@ public class Sensors {
 	private double weightSensor;
 	private double temperatureSensor;
 	private boolean anemometer; //false = wind speed is normal
+	private boolean brightCtrl;
 	
 	public boolean getLightSensor() {
 		return lightSensor;
@@ -36,5 +37,13 @@ public class Sensors {
 
 	public void setAnemometer(boolean anemometer) {
 		this.anemometer = anemometer;
+	}
+
+	public boolean getBrightCtrl() {
+		return brightCtrl;
+	}
+
+	public void  setBrightCtrl(boolean brightCtrl) {
+		this.brightCtrl = brightCtrl;
 	}
 }
