@@ -1,19 +1,8 @@
 package id.ac.sgu;
 
-import javax.swing.JPanel;
-import javax.swing.JFrame;
+import javax.swing.*;
 
 public class SmartHomeProjectMain {
-	SmartHomeController shc = new SmartHomeController();
-	
-//	public void firstCondition() {
-//		shc.AnemometerCtrl(false);
-//		shc.brightCtrl(true);
-//		shc.cameraCtrl(true);
-//		shc.tempCtrl(40);
-//		shc.voiceCtrl(true, false);
-//		shc.weightCtrl(4);
-//	}
 	
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
@@ -24,4 +13,5 @@ public class SmartHomeProjectMain {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 	}
+	
 }

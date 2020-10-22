@@ -1,6 +1,6 @@
 package id.ac.sgu;
 
-import java.util.*;
+//import java.util.*;
 
 class SmartHomeController {
 	//buat nanti baca sensors and what action should each things would do
