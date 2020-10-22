@@ -24,6 +24,7 @@ class SmartHomeController {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 	}
+	
 	public void lampCtrl(boolean b) {
 		if(bright == b) {
 			sensors.setBrightCtrl(true);
@@ -35,6 +36,7 @@ class SmartHomeController {
 			System.out.println("Lamp Brightness = " + sensors.getBrightCtrl());
 		}
 	}
+	
 	public void AirConditioner (double temperature){
 		//System.out.println("Test");
 		if (temperature > 27){
@@ -67,28 +69,28 @@ class SmartHomeController {
 	
 	public void tempCtrl(double temperature) {
 		if(temperature > 27) {
-			System.out.println("Phone notif: The temperature is" + temperature);
+			System.out.println("Phone notif: The temperature is " + temperature);
 			//ac.setOn
 		} else if(temperature < 23 ) {
-			System.out.println("Phone notif: The temperature is" + temperature);
+			System.out.println("Phone notif: The temperature is " + temperature);
 			//ac.setOff
 		} else if(temperature == 23 ) {
-			System.out.println("Phone notif: The temperature is" + temperature);
+			System.out.println("Phone notif: The temperature is " + temperature);
 			//ac.setOff
 		} else if(temperature == 24 ) {
-			System.out.println("Phone notif: The temperature is" + temperature);
+			System.out.println("Phone notif: The temperature is " + temperature);
 			//ac.setOff
 		} else if(temperature == 25 ) {
-			System.out.println("Phone notif: The temperature is" + temperature);
+			System.out.println("Phone notif: The temperature is " + temperature);
 			//ac.setOff
 		} else if(temperature == 26 ) {
-			System.out.println("Phone notif: The temperature is" + temperature);
+			System.out.println("Phone notif: The temperature is " + temperature);
 			//ac.setOff
 		} else if(temperature == 27 ) {
-			System.out.println("Phone notif: The temperature is" + temperature);
+			System.out.println("Phone notif: The temperature is " + temperature);
 			//ac.setOff
 		} else {
-			
+			System.out.println("Phone notif: The temperature is not changing, is it error?\n");
 		}
 	}
 	
