@@ -1,11 +1,8 @@
 package id.ac.sgu;
 
-<<<<<<< HEAD
-=======
 import javax.swing.*;
 //import java.util.*;
 
->>>>>>> a2e87b150cb954b8fde575d8c26085e449d18afe
 class SmartHomeController {
 	//buat nanti baca sensors and what action should each things would do
 	TvControl tvCtrl = new TvControl();
